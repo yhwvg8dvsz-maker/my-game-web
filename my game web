@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .game-card {
+            transition: all 0.3s ease;
+            border: 1px solid #2D0059;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            border-color: #00FF9F;
+            box-shadow: 0 0 20px rgba(0, 255, 159, 0.2);
+        }
+        .neon-text { text-shadow: 0 0 10px #00FF9F; }
+    </style>
+</head>
+<body class="bg-[#020205] text-white font-sans min-h-screen">
+
+    <header class="p-10 text-center">
+        <h1 class="text-5xl font-black italic neon-text text-[#00FF9F] uppercase">Cyber Arcade</h1>
+        <p class="text-gray-400 mt-2">Тоглоомоо сонгоод тулаанд нэгд!</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="game-card bg-[#0a0a15] rounded-xl overflow-hidden p-6 flex flex-col items-center">
+                <div class="w-20 h-20 bg-[#00FF9F] rounded-full flex items-center justify-center mb-4">
+                    <span class="text-4xl">🚀</span>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">Cyber Shooter</h2>
+                <p class="text-gray-500 text-center mb-6 text-sm">Сансрын хөлгөөр дайснуудыг устгаж, Boss-ыг ялаарай!</p>
+                <a href="shooter.html" class="w-full bg-[#00FF9F] text-black font-bold py-3 rounded text-center hover:brightness-110">ТОГЛОХ</a>
+            </div>
+
+            <div class="game-card bg-[#0a0a15] rounded-xl overflow-hidden p-6 flex flex-col items-center border-l-4 border-[#FF4081]">
+                <div class="w-20 h-20 bg-[#FF4081] rounded-full flex items-center justify-center mb-4">
+                    <span class="text-4xl">🐍</span>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">Neon Snake</h2>
+                <p class="text-gray-500 text-center mb-6 text-sm">Сонгодог могой тоглоомын кибер хувилбар. Хурдаа шалга!</p>
+                <a href="snake.html" class="w-full bg-[#FF4081] text-white font-bold py-3 rounded text-center hover:brightness-110">ТОГЛОХ</a>
+            </div>
+
+            <div class="game-card bg-[#0a0a15] rounded-xl overflow-hidden p-6 flex flex-col items-center">
+                <div class="w-20 h-20 bg-[#3F51B5] rounded-full flex items-center justify-center mb-4">
+                    <span class="text-4xl">🧠</span>
+                </div>
+                <h2 class="text-2xl font-bold mb-2">Cyber Quiz</h2>
+                <p class="text-gray-500 text-center mb-6 text-sm">Технологи болон тоглоомын мэдлэгээ сориорой.</p>
+                <button class="w-full bg-[#3F51B5] text-white font-bold py-3 rounded text-center opacity-50 cursor-not-allowed">У удахгүй...</button>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
